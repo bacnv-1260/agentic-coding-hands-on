@@ -6,25 +6,26 @@ Repository phục vụ khóa thực hành **Agentic Coding** nội bộ Sun\*. H
 
 ## Branches
 
-Repository có 2 branch:
+Repository có các branch sau:
 
-- [**`main`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/main) — Source code khởi tạo ban đầu. Học viên clone về và làm trên nhánh này. Cần tự cài đặt MoMorph CLI và chạy `momorph init` để sinh ra các thư mục `.claude`, `.vscode` (chứa prompts) kết nối với MoMorph MCP Server.
-- [**`sample`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/sample) — Có sẵn các thư mục `.claude`, `.vscode`, `.momorph` chứa specs mẫu của một số màn hình. Dùng để tham khảo khi muốn xem context đầu vào và kết quả mà MoMorph sinh ra trông như thế nào.
+- [**`main`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/main) — Tài liệu hướng dẫn và cấu hình Supabase. Học viên clone về, tự khởi tạo project (Next.js, Android, React Native, iOS...) và làm việc trên nhánh này.
+- [**`web/sample`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/web/sample) — Có sẵn các thư mục `.claude`, `.vscode`, `.momorph` chứa specs mẫu của một số màn hình. Dùng để tham khảo khi muốn xem context đầu vào và kết quả mà MoMorph sinh ra trông như thế nào.
 
 ## Prerequisites
 
-- Node.js v24.x
-- Docker (for running Supabase)
-- Yarn v1.22.22 (package manager)
+- Git
+- Docker (để chạy Supabase local)
 - [MoMorph CLI](https://github.com/momorph/cli)
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) hoặc VSCode + MoMorph Extension
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
+- [VSCode](https://code.visualstudio.com/) + MoMorph Extension — dùng để xem Figma frame list, copy prompt nhanh. Đặc biệt hữu ích cho mobile dev khi IDE chính (Android Studio, Xcode) không hỗ trợ MoMorph Extension.
 
-### Tech Stack
+### Suggested Tech Stack
 
-- **Next.js** – React framework for building full-stack web applications
-- **Supabase** – Backend-as-a-Service (BaaS) platform providing database, authentication, and real-time features
-- **Cloudflare Workers** – Edge computing platform for deploying and running applications
-- **TailwindCSS** – Utility-first CSS framework
+- **Backend (chung):** [Supabase](https://supabase.com/) — Backend-as-a-Service (BaaS) cung cấp database, authentication và real-time features
+- **Web:** Next.js + Cloudflare Workers + TailwindCSS + Supabase
+- **Android:** Kotlin + Jetpack Compose + Supabase
+- **iOS:** Swift + SwiftUI + Supabase
+- **React Native:** React Native + Expo + Supabase
 
 ## Hướng dẫn thực hành
 
@@ -35,24 +36,36 @@ Repository có 2 branch:
 3. Gửi GitHub username của bạn cho `@nguyen.huu.kim` hoặc `@le.minh.hoang` để được thêm vào danh sách thành viên của repository `sun-asterisk-internal/agentic-coding-hands-on`.
 4. Chờ xác nhận xử lý hoàn tất rồi thực hiện bước tiếp theo
 
-### Bước 1: Clone repository
+### Bước 1: Khởi tạo project của bạn
+
+Tạo project mới bằng công cụ phù hợp với platform bạn chọn:
 
 ```sh
-git clone https://github.com/sun-asterisk-internal/agentic-coding-hands-on.git
-cd agentic-coding-hands-on
+# Web (Next.js):
+npx create-next-app@latest my-app
+cd my-app
+
+# Android:
+# Mở Android Studio → New Project → tạo project mới
+
+# React Native (Expo):
+npx create-expo-app my-app
+cd my-app
+
+# iOS (Swift):
+# Mở Xcode → Create New Project → tạo project mới
 ```
 
-### Bước 2: Cài đặt dependencies
+Sau khi khởi tạo xong, thiết lập git remote trỏ về repository của bài thực hành:
 
 ```sh
-# Tạo file .env:
-cp .env.example .env
-
-# Cài đặt packages:
-yarn install
+git init    # nếu project chưa có git
+git remote add origin https://github.com/sun-asterisk-internal/agentic-coding-hands-on.git
 ```
 
-### Bước 3: Đăng nhập MoMorph Web và kết nối tài khoản GitHub
+> **Tại sao cần đặt remote?** MoMorph VSCode Extension cần nhận diện repository để hiển thị Figma file đã liên kết. Đặt remote trỏ về `sun-asterisk-internal/agentic-coding-hands-on` giúp MoMorph hoạt động chính xác.
+
+### Bước 2: Đăng nhập MoMorph Web và kết nối tài khoản GitHub
 
 1. Truy cập [MoMorph Web](https://momorph.ai/) và đăng nhập bằng tài khoản Figma (dùng email `*@sun-asterisk.com`).
 2. Điền link file Figma sau để tiếp tục: https://www.figma.com/design/9ypp4enmFmdK3YAFJLIu6C/SAA-2025---Internal-Live-Coding
@@ -60,17 +73,7 @@ yarn install
 
 > **Lưu ý:** Repository này đã được connect sẵn với MoMorph và Figma project trên hệ thống. Bạn chỉ cần kết nối tài khoản GitHub cá nhân với MoMorph là có thể sử dụng.
 
-### Bước 4: Đặt git remote trỏ đúng repository
-
-Đảm bảo git remote của repo trên local trỏ tới repository gốc:
-
-```sh
-git remote set-url origin https://github.com/sun-asterisk-internal/agentic-coding-hands-on.git
-```
-
-Điều này cần thiết để MoMorph VSCode Extension có thể nhận diện repository và hiển thị Figma file đã liên kết.
-
-### Bước 5: Cài đặt MoMorph CLI
+### Bước 3: Cài đặt MoMorph CLI
 
 Chọn một trong các cách sau:
 
@@ -94,7 +97,7 @@ Xác nhận cài đặt thành công:
 momorph version
 ```
 
-### Bước 6: Đăng nhập MoMorph CLI
+### Bước 4: Đăng nhập MoMorph CLI
 
 ```sh
 momorph login
@@ -108,7 +111,7 @@ Kiểm tra thông tin tài khoản:
 momorph whoami
 ```
 
-### Bước 7: Khởi tạo MoMorph project
+### Bước 5: Khởi tạo MoMorph project
 
 Chạy lệnh init để sinh ra các thư mục cấu hình (`.claude`, `.vscode` prompts, kết nối MCP server...):
 
@@ -131,7 +134,18 @@ Lệnh này sẽ:
 
 > **Lưu ý:** Nếu trong quá trình `momorph init` bạn gặp lỗi `failed to install extension` nhưng init vẫn hoàn tất, hãy tải file VSIX mới nhất và cài extension thủ công theo hướng dẫn tại đây: https://sun-asterisk.enterprise.slack.com/docs/T02CQGZA7MK/F094K2LTV71?focus_section_id=temp:C:USe2e5a076e79fd458c9b713260c
 
-### Bước 8: Bắt đầu generate code
+### Bước 6: Lọc màn hình mobile trên MoMorph VSCode Extension
+
+Nếu bạn đang thực hành với mobile, hãy lọc Figma Tree để chỉ hiển thị các thiết kế màn hình mobile:
+
+1. Mở Command Palette: `Ctrl+Shift+P` (Windows/Linux) hoặc `Cmd+Shift+P` (macOS)
+2. Chạy: **MoMorph: Filter Screens**
+3. Filter by: **Figma Pages** → Chọn **"Mobile"**
+4. Filter by: **Spec Status** → Chọn **"Done"**
+
+Thao tác này giúp Figma Tree chỉ hiển thị các màn hình mobile đã hoàn thành spec, giúp bạn thao tác nhanh gọn hơn.
+
+### Bước 7: Bắt đầu generate code
 
 Sử dụng Figma project để thực hành:
 
@@ -171,7 +185,7 @@ Sau khi đã có screen spec trên MoMorph server, sử dụng các slash comman
 **1. `/momorph.constitution`** — Tạo các quy tắc phát triển cần tuân thủ trong project:
 
 ```
-/momorph.constitution Viết clean code, tổ chức source code rõ ràng, ngắn gọn. Áp dụng các best practices với Next.js, Cloudflare Workers, Supabase. Ứng dụng cũng cần được đảm bảo responsive hỗ trợ tương thích với nhiều kích thước màn hình khác nhau, bao gồm từ mobile, tablet cho đến desktop. Ngoài ra, cũng lưu ý tuân thủ các tiêu chuẩn bảo mật secure coding practices owasp.
+/momorph.constitution Viết clean code, tổ chức source code rõ ràng, ngắn gọn. Áp dụng các best practices cho tech stack đã chọn và Supabase. Ứng dụng cần tuân theo UI patterns và guidelines phù hợp với platform (Material Design cho Android, Human Interface Guidelines cho iOS, responsive web design cho web). Tuân thủ các tiêu chuẩn bảo mật OWASP secure coding practices.
 ```
 
 **2. `/momorph.specify`** — Tạo local specs + tổng hợp thông tin về figma design:
@@ -193,7 +207,7 @@ https://momorph.ai/files/Z9KFZ0aAoOfkVEIPuwwkZl/frames/662:14387
 **4. `/momorph.plan`** — Tạo implementation plan:
 
 ```
-/momorph.plan Sử dụng Supabase Auth + Next.js + Cloudflare. Hãy tạo kế hoạch phát triển màn hình Login:
+/momorph.plan Sử dụng Supabase Auth. Hãy tạo kế hoạch phát triển màn hình Login:
 https://momorph.ai/files/Z9KFZ0aAoOfkVEIPuwwkZl/frames/662:14387
 ```
 
@@ -227,17 +241,28 @@ Khuyến nghị tiếp tục sử dụng command `/momorph.implement` để fix 
 /momorph.implement Thêm task fix bug sai font chữ ở footer. Hãy review lại một lượt xem font chữ các các item đã đúng theo design chưa.
 ```
 
-### Bước 9: Chạy development server
+### Bước 8: Chạy project
+
+Chạy project theo platform bạn đang sử dụng:
 
 ```sh
-# Khởi động local containers:
-make up
+# Supabase local (chung cho tất cả platforms):
+npx supabase start    # Khởi động Supabase local
+npx supabase stop     # Dừng Supabase local
+```
 
-# Chạy dev server:
-make dev
+```sh
+# Web (Next.js):
+yarn dev              # hoặc npm run dev
 
-# Dừng containers:
-make down
+# Android:
+# Run từ Android Studio (Shift+F10)
+
+# iOS:
+# Run từ Xcode (Cmd+R)
+
+# React Native:
+npx expo start        # hoặc npx react-native run-android / run-ios
 ```
 
 ## Tài liệu tham khảo

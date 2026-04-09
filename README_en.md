@@ -6,25 +6,26 @@ Repository for the Sun\* internal **Agentic Coding** hands-on workshop. Particip
 
 ## Branches
 
-This repository has 2 branches:
+This repository has the following branches:
 
-- [**`main`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/main) — Initial source code. Participants clone this repository and work on this branch. You will need to install MoMorph CLI and run `momorph init` to generate the `.claude`, `.vscode` directories (containing prompts) to connect with the MoMorph MCP Server.
-- [**`sample`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/sample) — Contains pre-built `.claude`, `.vscode`, `.momorph` directories with sample specs for several screens. Use this as a reference to see what the input context and MoMorph-generated output look like.
+- [**`main`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/main) — Documentation and Supabase configuration only. Participants clone this branch and initialize their own project (Next.js, Android, React Native, iOS, etc.).
+- [**`web/sample`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/web/sample) — Contains pre-built `.claude`, `.vscode`, `.momorph` directories with sample specs for several screens. Use this as a reference to see what the input context and MoMorph-generated output look like.
 
 ## Prerequisites
 
-- Node.js v24.x
-- Docker (for running Supabase)
-- Yarn v1.22.22 (package manager)
+- Git
+- Docker (for running Supabase locally)
 - [MoMorph CLI](https://github.com/momorph/cli)
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or VSCode + MoMorph Extension
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
+- [VSCode](https://code.visualstudio.com/) + MoMorph Extension — for viewing Figma frame lists and quickly copying prompts. Especially useful for mobile developers whose primary IDE (Android Studio, Xcode) does not support the MoMorph Extension.
 
-### Tech Stack
+### Suggested Tech Stack
 
-- **Next.js** – React framework for building full-stack web applications
-- **Supabase** – Backend-as-a-Service (BaaS) platform providing database, authentication, and real-time features
-- **Cloudflare Workers** – Edge computing platform for deploying and running applications
-- **TailwindCSS** – Utility-first CSS framework
+- **Backend (common):** [Supabase](https://supabase.com/) — Backend-as-a-Service (BaaS) platform providing database, authentication, and real-time features
+- **Web:** Next.js + Cloudflare Workers + TailwindCSS + Supabase
+- **Android:** Kotlin + Jetpack Compose + Supabase
+- **iOS:** Swift + SwiftUI + Supabase
+- **React Native:** React Native + Expo + Supabase
 
 ## Hands-on Guide
 
@@ -35,24 +36,36 @@ This repository has 2 branches:
 3. Send your GitHub username to `@nguyen.huu.kim` or `@le.minh.hoang` so you can be added to the `sun-asterisk-internal/agentic-coding-hands-on` repository members list
 4. Wait for confirmation, then proceed to the next step
 
-### Step 1: Clone the repository
+### Step 1: Initialize your project
+
+Create a new project using the appropriate tool for your chosen platform:
 
 ```sh
-git clone https://github.com/sun-asterisk-internal/agentic-coding-hands-on.git
-cd agentic-coding-hands-on
+# Web (Next.js):
+npx create-next-app@latest my-app
+cd my-app
+
+# Android:
+# Open Android Studio → New Project → create a new project
+
+# React Native (Expo):
+npx create-expo-app my-app
+cd my-app
+
+# iOS (Swift):
+# Open Xcode → Create New Project → create a new project
 ```
 
-### Step 2: Install dependencies
+After initialization, set up a git remote pointing to the hands-on repository:
 
 ```sh
-# Create .env file:
-cp .env.example .env
-
-# Install packages:
-yarn install
+git init    # if the project doesn't have git yet
+git remote add origin https://github.com/sun-asterisk-internal/agentic-coding-hands-on.git
 ```
 
-### Step 3: Sign in to MoMorph Web and connect your GitHub account
+> **Why set the remote?** The MoMorph VSCode Extension needs to identify the repository to display the linked Figma file. Pointing the remote to `sun-asterisk-internal/agentic-coding-hands-on` ensures MoMorph works correctly.
+
+### Step 2: Sign in to MoMorph Web and connect your GitHub account
 
 1. Go to [MoMorph Web](https://momorph.ai/) and sign in with your Figma account (use your `*@sun-asterisk.com` email).
 2. Enter the following Figma file link to continue: https://www.figma.com/design/9ypp4enmFmdK3YAFJLIu6C/SAA-2025---Internal-Live-Coding
@@ -60,17 +73,7 @@ yarn install
 
 > **Note:** This repository is already connected to MoMorph and the Figma project on the system. You only need to connect your personal GitHub account to MoMorph to get started.
 
-### Step 4: Set git remote to point to the correct repository
-
-Ensure the local repo's git remote points to the original repository:
-
-```sh
-git remote set-url origin https://github.com/sun-asterisk-internal/agentic-coding-hands-on.git
-```
-
-This is necessary for the MoMorph VSCode Extension to recognize the repository and display the linked Figma file.
-
-### Step 5: Install MoMorph CLI
+### Step 3: Install MoMorph CLI
 
 Choose one of the following installation methods:
 
@@ -94,7 +97,7 @@ Verify the installation:
 momorph version
 ```
 
-### Step 6: Sign in to MoMorph CLI
+### Step 4: Sign in to MoMorph CLI
 
 ```sh
 momorph login
@@ -108,7 +111,7 @@ Check your account information:
 momorph whoami
 ```
 
-### Step 7: Initialize the MoMorph project
+### Step 5: Initialize the MoMorph project
 
 Run the init command to generate configuration directories (`.claude`, `.vscode` prompts, MCP server connection, etc.):
 
@@ -131,7 +134,18 @@ This command will:
 
 > **Note:** If you encounter the `failed to install extension` error during `momorph init` but the init process still succeeds, download the latest VSIX file and install the extension manually by following this guide: https://sun-asterisk.enterprise.slack.com/docs/T02CQGZA7MK/F094K2LTV71?focus_section_id=temp:C:USe2e5a076e79fd458c9b713260c
 
-### Step 8: Start generating code
+### Step 6: Filter mobile screens in MoMorph VSCode Extension
+
+If you are practicing with mobile, filter the Figma Tree to show only mobile screen designs:
+
+1. Open the Command Palette: `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS)
+2. Run: **MoMorph: Filter Screens**
+3. Filter by: **Figma Pages** → Select **"Mobile"**
+4. Filter by: **Spec Status** → Select **"Done"**
+
+This filters the screen list to show only mobile screens with completed specifications, making your workflow faster and more focused.
+
+### Step 7: Start generating code
 
 Use the Figma project for practice:
 
@@ -171,7 +185,7 @@ Once screen specs are available on the MoMorph server, use slash commands in you
 **1. `/momorph.constitution`** — Create development rules to follow in the project:
 
 ```
-/momorph.constitution Write clean code with clear, concise source code organization. Apply best practices with Next.js, Cloudflare Workers, and Supabase. The application must also be responsive and support compatibility across different screen sizes, including mobile, tablet, and desktop. Additionally, adhere to OWASP secure coding standards.
+/momorph.constitution Write clean code with clear, concise source code organization. Apply best practices for your chosen tech stack and Supabase. The application should follow platform-appropriate UI patterns and guidelines (Material Design for Android, Human Interface Guidelines for iOS, responsive web design for web). Adhere to OWASP secure coding standards.
 ```
 
 **2. `/momorph.specify`** — Create local specs and synthesize Figma design information:
@@ -193,7 +207,7 @@ https://momorph.ai/files/Z9KFZ0aAoOfkVEIPuwwkZl/frames/662:14387
 **4. `/momorph.plan`** — Create an implementation plan:
 
 ```
-/momorph.plan Using Supabase Auth + Next.js + Cloudflare. Create a development plan for the Login screen:
+/momorph.plan Using Supabase Auth. Create a development plan for the Login screen:
 https://momorph.ai/files/Z9KFZ0aAoOfkVEIPuwwkZl/frames/662:14387
 ```
 
@@ -227,17 +241,28 @@ It is recommended to continue using the `/momorph.implement` command to fix bugs
 /momorph.implement Add a task to fix the incorrect font in the footer. Please review all items to ensure the fonts match the design.
 ```
 
-### Step 9: Run the development server
+### Step 8: Run your project
+
+Run your project using the appropriate commands for your platform:
 
 ```sh
-# Start local containers:
-make up
+# Supabase local (common for all platforms):
+npx supabase start    # Start Supabase locally
+npx supabase stop     # Stop Supabase locally
+```
 
-# Run dev server:
-make dev
+```sh
+# Web (Next.js):
+yarn dev              # or npm run dev
 
-# Stop containers:
-make down
+# Android:
+# Run from Android Studio (Shift+F10)
+
+# iOS:
+# Run from Xcode (Cmd+R)
+
+# React Native:
+npx expo start        # or npx react-native run-android / run-ios
 ```
 
 ## References
