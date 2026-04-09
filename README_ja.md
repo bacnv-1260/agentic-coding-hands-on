@@ -9,7 +9,7 @@ Sun\* 社内向け **Agentic Coding** ハンズオン研修用リポジトリで
 このリポジトリには以下のブランチがあります:
 
 - [**`main`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/main) — ドキュメントと Supabase 設定のみ。受講者はこのブランチをクローンし、自分でプロジェクト（Next.js、Android、React Native、iOS など）を初期化して作業します。
-- [**`web/sample`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/web/sample) — いくつかの画面のサンプルスペックが含まれた `.claude`、`.vscode`、`.momorph` ディレクトリが事前に用意されています。MoMorph が生成する入力コンテキストや出力結果の参考として使用してください。
+- [**`web-sample`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/web-sample) — Web（Next.js）のサンプルリファレンス。いくつかの画面のサンプルスペックと生成済みコードが含まれた `.claude`、`.vscode`、`.momorph` ディレクトリが事前に用意されています。入力コンテキストや MoMorph の出力結果を確認する際に使用してください。
 
 ## 前提条件
 

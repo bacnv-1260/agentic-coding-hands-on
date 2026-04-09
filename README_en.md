@@ -9,7 +9,7 @@ Repository for the Sun\* internal **Agentic Coding** hands-on workshop. Particip
 This repository has the following branches:
 
 - [**`main`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/main) — Documentation and Supabase configuration only. Participants clone this branch and initialize their own project (Next.js, Android, React Native, iOS, etc.).
-- [**`web/sample`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/web/sample) — Contains pre-built `.claude`, `.vscode`, `.momorph` directories with sample specs for several screens. Use this as a reference to see what the input context and MoMorph-generated output look like.
+- [**`web-sample`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/web-sample) — Sample reference for Web (Next.js). Contains pre-built `.claude`, `.vscode`, `.momorph` directories with sample specs and generated code for several screens. Use this to see what the input context and MoMorph-generated output look like.
 
 ## Prerequisites
 

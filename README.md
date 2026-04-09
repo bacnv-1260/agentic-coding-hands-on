@@ -9,7 +9,7 @@ Repository phục vụ khóa thực hành **Agentic Coding** nội bộ Sun\*. H
 Repository có các branch sau:
 
 - [**`main`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/main) — Tài liệu hướng dẫn và cấu hình Supabase. Học viên clone về, tự khởi tạo project (Next.js, Android, React Native, iOS...) và làm việc trên nhánh này.
-- [**`web/sample`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/web/sample) — Có sẵn các thư mục `.claude`, `.vscode`, `.momorph` chứa specs mẫu của một số màn hình. Dùng để tham khảo khi muốn xem context đầu vào và kết quả mà MoMorph sinh ra trông như thế nào.
+- [**`web-sample`**](https://github.com/sun-asterisk-internal/agentic-coding-hands-on/tree/web-sample) — Mẫu tham khảo cho Web (Next.js). Có sẵn các thư mục `.claude`, `.vscode`, `.momorph` chứa specs mẫu và code đã generate cho một số màn hình. Dùng để xem context đầu vào và kết quả mà MoMorph sinh ra trông như thế nào.
 
 ## Prerequisites
 
