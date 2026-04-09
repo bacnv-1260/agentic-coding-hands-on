@@ -35,8 +35,6 @@ You are not limited to any specific tech stack — feel free to use any framewor
 
 1. Visit https://github.com/orgs/sun-asterisk-internal/sso
 2. Complete the SSO sign-in process so your GitHub account can join the `sun-asterisk-internal` organization
-3. Send your GitHub username to `@nguyen.huu.kim` or `@le.minh.hoang` so you can be added to the `sun-asterisk-internal/agentic-coding-hands-on` repository members list
-4. Wait for confirmation, then proceed to the next step
 
 ### Step 1: Initialize your project
 

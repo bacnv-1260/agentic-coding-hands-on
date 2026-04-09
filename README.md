@@ -34,9 +34,7 @@ Bạn không bị giới hạn về tech stack — có thể tự do sử dụng
 ### Bước 0: Thực hiện GitHub SSO
 
 1. Truy cập https://github.com/orgs/sun-asterisk-internal/sso
-2. Hoàn tất quà trình đăng nhập SSO để tài khoản GitHub của bạn được tham gia vào organization `sun-asterisk-internal`
-3. Gửi GitHub username của bạn cho `@nguyen.huu.kim` hoặc `@le.minh.hoang` để được thêm vào danh sách thành viên của repository `sun-asterisk-internal/agentic-coding-hands-on`.
-4. Chờ xác nhận xử lý hoàn tất rồi thực hiện bước tiếp theo
+2. Hoàn tất quá trình đăng nhập SSO để tài khoản GitHub của bạn được tham gia vào organization `sun-asterisk-internal`
 
 ### Bước 1: Khởi tạo project của bạn
 
