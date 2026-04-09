@@ -35,8 +35,6 @@ Sun\* 社内向け **Agentic Coding** ハンズオン研修用リポジトリで
 
 1. https://github.com/orgs/sun-asterisk-internal/sso にアクセスします
 2. SSO サインインを完了し、あなたの GitHub アカウントが `sun-asterisk-internal` organization に参加できる状態にします
-3. `sun-asterisk-internal/agentic-coding-hands-on` リポジトリのメンバーに追加してもらうため、GitHub ユーザー名を `@nguyen.huu.kim` または `@le.minh.hoang` に共有します
-4. 対応完了の連絡を待ってから、次のステップに進みます
 
 ### ステップ 1: プロジェクトの初期化
 
