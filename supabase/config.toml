@@ -60,7 +60,7 @@ schema_paths = []
 enabled = true
 # Specifies an ordered list of seed files to load during db reset.
 # Supports glob patterns relative to supabase directory: "./seeds/*.sql"
-sql_paths = ["./seeds/common/*.sql", "env(SUPABASE_EXTRA_SEEDS)"]
+sql_paths = ["./seeds/common/*.sql", "./seeds/dev/*.sql"]
 
 [db.network_restrictions]
 # Enable management of network restrictions.
@@ -111,6 +111,12 @@ public = false
 file_size_limit = "50MiB"
 allowed_mime_types = ["image/png", "image/jpeg"]
 objects_path = "./images"
+
+[storage.buckets.awards]
+public = true
+file_size_limit = "50MiB"
+allowed_mime_types = ["image/png", "image/jpeg"]
+objects_path = "./images/awards"
 
 # Allow connections via S3 compatible clients
 [storage.s3_protocol]
@@ -363,7 +369,7 @@ deno_version = 2
 # secret_key = "env(SECRET_VALUE)"
 
 [analytics]
-enabled = true
+enabled = false
 port = 54327
 # Configure one of the supported backends: `postgres`, `bigquery`.
 backend = "postgres"

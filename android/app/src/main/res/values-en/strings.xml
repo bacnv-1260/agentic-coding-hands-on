@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">saa</string>
+
+    <!-- Login screen — English -->
+    <string name="login_description">Start your journey with SAA 2025. Log in to explore!</string>
+    <string name="login_button_label">LOGIN With Google</string>
+    <string name="copyright_text">Copyright belongs to Sun* © 2025</string>
+    <string name="language_selector_label">Select language</string>
+    <string name="language_selector_description">Select language, current: %s</string>
+    <string name="language_option_vn">Vietnamese</string>
+    <string name="language_option_en">English</string>
+
+    <!-- Access Denied screen -->
+    <string name="access_denied_title">Access Denied</string>
+    <string name="access_denied_description">You don\u2019t have permission to access this resource.</string>
+    <string name="access_denied_button">Go back to Home</string>
+    <string name="cd_back_arrow">Go back</string>
+
+    <!-- Home screen -->
+    <string name="home_coming_soon">Coming soon</string>
+    <string name="home_countdown_days">DAYS</string>
+    <string name="home_countdown_hours">HOURS</string>
+    <string name="home_countdown_minutes">MINUTES</string>
+    <string name="home_event_time_label">Date: </string>
+    <string name="home_event_time_value">26/12/2025</string>
+    <string name="home_event_venue_label">Venue:</string>
+    <string name="home_event_venue_value">Âu Cơ Art Center</string>
+    <string name="home_event_livestream">Live stream on Facebook Group Sun* Family</string>
+    <string name="home_btn_about_award">ABOUT AWARD</string>
+    <string name="home_btn_about_kudos">ABOUT KUDOS</string>
+    <string name="home_note_text">More than just a name, "Root Further" is the spirit that every Sun* member strives toward: always thinking deeply in every context and continuously creating, expanding oneself to overcome the limits previously set. Drawing on the metaphor of color theory, from just three primary colors — red, yellow, and blue — the infinite creativity of each individual can produce a near-unlimited palette of colors, with each shade representing boundless breakthrough and creativity.</string>
+    <string name="home_awards_section_label">Sun* Annual Awards 2025</string>
+    <string name="home_awards_section_title">Award system</string>
+    <string name="home_award_chi_tiet">Details</string>
+    <string name="home_awards_empty">No awards yet.</string>
+    <string name="home_awards_error">Failed to load data. Retry?</string>
+    <string name="home_awards_retry">Retry</string>
+    <string name="home_kudos_section_label">Recognition movement</string>
+    <string name="home_kudos_section_title">Sun* Kudos</string>
+    <string name="home_kudos_new_badge">NEW IN SAA 2025</string>
+    <string name="home_kudos_description">Recognition and appreciation activity for colleagues — happening for the first time for all Sunners. The activity will roll out in November 2025, encouraging Sun* members to share recognition and gratitude on the system announced by the organizing committee. This will serve as input for the Heads Council during the award selection process.</string>
+    <string name="home_kudos_chi_tiet">Details</string>
+    <string name="home_nav_saa">SAA 2025</string>
+    <string name="home_nav_awards">Awards</string>
+    <string name="home_nav_kudos">Kudos</string>
+    <string name="home_nav_profile">Profile</string>
+    <string name="cd_saa_logo">SAA Annual Awards logo</string>
+    <string name="cd_language_switcher">Switch language, current: %s</string>
+    <string name="cd_search">Search</string>
+    <string name="cd_notification_bell">Notifications</string>
+    <string name="cd_notification_badge">Unread notifications</string>
+    <string name="cd_root_further_logo">ROOT FURTHER logo</string>
+    <string name="cd_kudos_banner">Sun Kudos banner</string>
+    <string name="cd_fab_write_kudo">Write a Kudo</string>
+    <string name="cd_fab_kudos_feed">Kudos feed</string>
+
+    <!-- Award Detail screen -->
+    <string name="award_detail_system_title">SAA 2025 Award System</string>
+    <string name="award_detail_quantity_label">Number of awards</string>
+    <string name="award_detail_prize_label">Award value</string>
+    <string name="award_detail_prize_note">per award</string>
+    <string name="award_detail_kudos_intro">Recognition &amp; appreciation system</string>
+    <string name="award_detail_image_cd">Award badge %s</string>
+    <string name="award_detail_loading">Loading award…</string>
+    <string name="award_detail_error">Failed to load award. Retry?</string>
+
+    <!-- Community Standards screen -->
+    <string name="community_standards_title">Community Standards</string>
+    <string name="community_standards_s1_title">What is Kudos?</string>
+    <string name="community_standards_s1_body">Kudos is a recognition message sent to a colleague for their contributions, efforts, or positive actions at work. It is a way for every Sun* member to show genuine and meaningful appreciation for one another.</string>
+    <string name="community_standards_s2_title">How to write a title</string>
+    <string name="community_standards_s2_body">The title should be concise and accurately reflect the recipient’s contribution. Choose positive, specific words that align with Sun* culture. Examples: "Inspiring leader", "Teamwork star", "Problem-solving expert".</string>
+    <string name="community_standards_s3_title">Valid hashtags</string>
+    <string name="community_standards_s3_body">Use hashtags to categorize Kudos by topic or Sun* value. Hashtags must start with # and contain no spaces. Examples: #teamwork, #innovation, #leadership, #customer_focus.</string>
+    <string name="community_standards_s4_title">Prohibited content</string>
+    <string name="community_standards_s4_body">Do not use offensive, discriminatory, or personally critical language. Do not share sensitive personal information. Do not send Kudos for commercial or advertising purposes. Violating content will be removed and the account may be restricted.</string>
+    <string name="community_standards_s5_title">Anonymous recognition</string>
+    <string name="community_standards_s5_body">You may choose to send Kudos anonymously. When this option is enabled, your name will not be shown to the recipient; however, the Organizing Committee can still view sender information to ensure compliance with community standards.</string>
+</resources>

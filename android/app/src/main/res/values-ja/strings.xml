@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">saa</string>
+
+    <!-- Login screen — Japanese -->
+    <!-- TODO(localization): All strings below are PLACEHOLDERS -->
+    <!-- NEEDS TRANSLATION — yêu cầu từ Localization Team trước khi dev -->
+    <string name="login_description">[NEEDS TRANSLATION — yêu cầu từ Localization Team trước khi dev]</string>
+    <string name="login_button_label">LOGIN With Google</string>
+    <string name="copyright_text">[NEEDS TRANSLATION — yêu cầu từ Localization Team trước khi dev]</string>
+    <string name="language_selector_label">言語を選択</string>
+</resources>

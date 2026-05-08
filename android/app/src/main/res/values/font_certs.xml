@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Certificate for Google Fonts Provider (com.google.android.gms.fonts).
+    Required by androidx.compose.ui:ui-text-google-fonts GoogleFont.Provider.
+    Source: https://developers.google.com/fonts/docs/android#certificate_for_google_fonts_provider
+-->
+<resources>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+
+    <!-- Development certificate -->
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYD
+            VQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5j
+            aXNjbzETMBEGA1UEChMKR29vZ2xlIEluYzEXMBUGA1UECxMOQW5kcm9pZCBNYXJr
+            ZXQxGjAYBgNVBAMTEWFuZHJvaWQuZ29vZ2xlLmNvbTAeFw0wODAyMjEwMTMzMzZa
+            Fw0zNjAxMjkwMTMzMzZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZv
+            cm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzETMBEGA1UEChMKR29vZ2xlIElu
+            YzEXMBUGA1UECxMOQW5kcm9pZCBNYXJrZXQxGjAYBgNVBAMTEWFuZHJvaWQuZ29v
+            Z2xlLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+Ife
+            CgW13biqAYV5lEMzeXEULLWmFBKAzJMKBYLLVKIMhTGqobI3AHPYBkLABJKmkBiT
+            tIJfuxnpH7VCHPntnGFHXyQDkS1pGbxnMCM/4cGV5V22yqZWDq26gV7qkRtHlCqo
+            wkZxJJADNkrTdL5bF+3sJkTBgHT38BKzAUuAZHGjC5lNNR9ZCvAK9GHxh/XlvFRn
+            3LKUF9gVbFRoRHrLSB5HNZRQH7V2W/rdQqYN0E37yGJGQIiUlKHyj9GX48WXYXRK
+            gHMWe2FqKEQHiM13DpCDgfJO4/MIBzH/SmaYPkJIJI8G1fFHZcbxkTNzWCm1TNCQ
+            IBkCAQOjgfwwgfkwHQYDVR0OBBYEFMd9jMIhF1Uo4ECJQ3p8hxO/Xf3NMIHJBgNV
+            HSMEgcEwgb6AFMd9jMIhF1Uo4ECJQ3p8hxO/Xf3NoYGapIGXMIGUMQswCQYDVQQG
+            EwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNj
+            bzETMBEGA1UEChMKR29vZ2xlIEluYzEXMBUGA1UECxMOQW5kcm9pZCBNYXJrZXQx
+            GjAYBgNVBAMTEWFuZHJvaWQuZ29vZ2xlLmNvbYIJANWFuGx90071MAwGA1UdEwQF
+            MAMBAf8wDQYJKoZIhvcNAQEEBQADggEBAHnKdBMV+phPmP96f8DYFQhCtGGQ1OoU
+            H5UYaRYwt1aBXQGQz/QINV7VmPNIjcUfKqjRyIkNLlAKXS1rMBHgJT5HYoV6hkZ
+            pBfF1nVPBWu3iRCIFXXUFlSqyHpxGWA/gzTU8D1q5LXl/gIkFRqVuW5UfGE2bh8l
+            KJJr37sFxAHs1yGKyMoGYvwFarKWfPyFhPHJ7k6UkFCK9rJHpMTtIV6WJHYBcJ8e
+            DVIX6Mek1ZosBHzgMLhzIWfhS7VaHRRCiR9MCniFVbVp0yBGSP1VbDAKX/bHiobz
+            y6MHKB3mvY0+Q+HO7E2TayCeOUlEoBFn6K9Dt/0CAQM=
+        </item>
+    </string-array>
+
+    <!-- Production certificate -->
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNV
+            BAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBW
+            aWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4G
+            A1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQx
+            CzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3Vu
+            dGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9p
+            ZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgC
+            ggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0uZAfPHe0PNMF5bT/rRMVDrDU8bIx3Lq
+            y1MMC6bFhREVTJDtgAT5MBfTLO6bSLdMbRoCqNFOmIFSMPjNVWbNS9A/WiCNPmJc
+            oVQd+4TqXsNgwWy4WDc8VpFR0yIxbE7v9BqMqJekQEn7yBwViFRWRQ2bS87LWm1I
+            W/d1/0VuD+QcNfLqGqVfLlgxRBXtqgXRqtbkRbM8HkRaS//TvFgJf5aQqEMGNh9q
+            BmxnRp5KgRx0rMI+RJPJSXE7GrxGNMuSdh0AHkP1oJqGHJPTa0qXpYBzZ3AWQAB
+            AQICBAMCAQEwDQYJKoZIhvcNAQEEBQADggEBAE5MAhqN5N7T8MTxdgSLiLwN15aw9
+            drSmQFiJr7lcF9PNk68GcnT4dPZ5P9bJA3GZPVBmfJ7I4LMrLnbDVaxuUCG7U/1B
+            fUlBFIcgV5/4dCGQKQi+dv8sHlLFMRiZXEVlZfOJ2TmFbpDoiG8Fv2CHGzj1r0nM
+            NpnU0pXm0HFgFYmtfTFGAHRnMf3nkGM7UR/MgMmBGK3kHbT+kMqbTmhXEQVhHg5M
+            4yHZBc7rXb4gJ3Kl3vJ2oFKN0ZoC17WaFf5zHSJRLWNnU7GQS5K1Pw3B6uiGRB3J
+            P9yoovxR4e7GH0c7sNfQaONf2AHgPf5v4H9AJWXP8z3K4zX4oYWu1cA=
+        </item>
+    </string-array>
+</resources>

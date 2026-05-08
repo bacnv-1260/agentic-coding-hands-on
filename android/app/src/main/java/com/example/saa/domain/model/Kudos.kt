@@ -1,0 +1,27 @@
+package com.example.saa.domain.model
+
+data class Kudos(
+    val id: String,
+    val senderId: String,
+    val recipientId: String,
+    val message: String,
+    val awardCategoryName: String,
+    val heartCount: Int,
+    val createdAt: String,
+    val hashtags: List<String>,
+    val senderAvatarUrl: String?,
+    val senderName: String,
+    val senderEmployeeCode: String,
+    val senderBadgeType: String,
+    val senderDepartmentName: String,
+    val recipientAvatarUrl: String?,
+    val recipientName: String,
+    val recipientHeroTier: Int,
+    val recipientDepartmentName: String,
+    val shareUrl: String,
+    val isLiked: Boolean,
+    val photoUrls: List<String>,
+    val isAnonymous: Boolean = false,
+    val anonymousNickname: String = "",
+    val canLike: Boolean = true,
+)

@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">saa</string>
+
+    <!-- Login screen — Vietnamese (default) -->
+    <string name="login_description">Bắt đầu hành trình của bạn cùng SAA 2025. Đăng nhập để khám phá!</string>
+    <!-- Note: trim trailing space from Figma source "LOGIN With Google " -->
+    <string name="login_button_label">LOGIN With Google</string>
+    <string name="copyright_text">Bản quyền thuộc về Sun* © 2025</string>
+    <string name="language_selector_label">Chọn ngôn ngữ</string>
+    <string name="language_selector_description">Chọn ngôn ngữ, hiện tại: %s</string>
+    <string name="language_option_vn">Tiếng Việt</string>
+    <string name="language_option_en">Tiếng Anh</string>
+
+    <!-- Access Denied screen -->
+    <string name="access_denied_title">Truy cập bị từ chối</string>
+    <string name="access_denied_description">Bạn không có quyền truy cập tài nguyên này.</string>
+    <string name="access_denied_button">Quay về trang chủ</string>
+    <string name="cd_back_arrow">Quay lại</string>
+
+    <!-- Home screen -->
+    <string name="home_coming_soon">Coming soon</string>
+    <string name="home_countdown_days">DAYS</string>
+    <string name="home_countdown_hours">HOURS</string>
+    <string name="home_countdown_minutes">MINUTES</string>
+    <string name="home_event_time_label">Thời gian: </string>
+    <string name="home_event_time_value">26/12/2025</string>
+    <string name="home_event_venue_label">Địa điểm:</string>
+    <string name="home_event_venue_value">Âu Cơ Art Center</string>
+    <string name="home_event_livestream">Tường thuật trực tiếp tại Group Facebook Sun* Family</string>
+    <string name="home_btn_about_award">ABOUT AWARD</string>
+    <string name="home_btn_about_kudos">ABOUT KUDOS</string>
+    <string name="home_note_text">Không đơn thuần là một cái tên, \"Root Further\" chính là tinh thần mà mỗi người Sun* đang hướng tới: luôn nhìn nhận sâu sắc trong mọi bối cảnh và không ngừng sáng tạo, mở rộng bản thân để vượt qua những giới hạn mà chính mình đã từng đặt ra. Mượn hình ảnh ẩn dụ của lý thuyết phối màu, chỉ từ ba màu cơ bản: đỏ, vàng và lam, sức sáng tạo vô tận của mỗi cá nhân có thể tạo ra số lượng màu sắc gần như vô hạn, với mỗi gam màu đều đại diện cho sự bứt phá và sáng tạo không giới hạn.</string>
+    <string name="home_awards_section_label">Sun* Annual Awards 2025</string>
+    <string name="home_awards_section_title">Hệ thống giải thưởng</string>
+    <string name="home_award_chi_tiet">Chi tiết</string>
+    <string name="home_awards_empty">Chưa có giải thưởng nào.</string>
+    <string name="home_awards_error">Không thể tải dữ liệu. Thử lại?</string>
+    <string name="home_awards_retry">Thử lại</string>
+    <string name="home_kudos_section_label">Phong trào ghi nhận</string>
+    <string name="home_kudos_section_title">Sun* Kudos</string>
+    <string name="home_kudos_new_badge">ĐIỂM MỚI CỦA SAA 2025</string>
+    <string name="home_kudos_description">Hoạt động ghi nhận và cảm ơn đồng nghiệp - lần đầu tiên được diễn ra dành cho tất cả Sunner. Hoạt động sẽ được triển khai vào tháng 11/2025, khuyến khích người Sun* chia sẻ những lời ghi nhận, cảm ơn đồng nghiệp trên hệ thống do BTC công bố. Đây sẽ là chất liệu để Hội đồng Heads tham khảo trong quá trình lựa chọn người đạt giải.</string>
+    <string name="home_kudos_chi_tiet">Chi tiết</string>
+    <string name="home_nav_saa">SAA 2025</string>
+    <string name="home_nav_awards">Awards</string>
+    <string name="home_nav_kudos">Kudos</string>
+    <string name="home_nav_profile">Profile</string>
+    <string name="cd_saa_logo">SAA Annual Awards logo</string>
+    <string name="cd_language_switcher">Chuyển ngôn ngữ, hiện tại: %s</string>
+    <string name="cd_search">Tìm kiếm</string>
+    <string name="cd_notification_bell">Thông báo</string>
+    <string name="cd_notification_badge">Có thông báo chưa đọc</string>
+    <string name="cd_root_further_logo">ROOT FURTHER logo</string>
+    <string name="cd_kudos_banner">Sun Kudos banner</string>
+    <string name="cd_fab_write_kudo">Viết Kudo</string>
+    <string name="cd_fab_kudos_feed">Xem Kudos</string>
+
+    <!-- Award Detail screen -->
+    <string name="award_detail_system_title">Hệ thống giải thưởng SAA 2025</string>
+    <string name="award_detail_quantity_label">Số lượng giải thưởng</string>
+    <string name="award_detail_prize_label">Giá trị giải thưởng</string>
+    <string name="award_detail_prize_note">cho mỗi giải thưởng</string>
+    <string name="award_detail_kudos_intro">Hệ thống ghi nhận và cảm ơn</string>
+    <string name="award_detail_image_cd">Huy hiệu giải thưởng %s</string>
+    <string name="award_detail_loading">Đang tải giải thưởng…</string>
+    <string name="award_detail_error">Không thể tải giải thưởng. Thử lại?</string>
+
+    <!-- Community Standards screen -->
+    <string name="community_standards_title">Tiêu chuẩn cộng đồng</string>
+    <string name="community_standards_s1_title">Kudos là gì?</string>
+    <string name="community_standards_s1_body">Kudos là lời ghi nhận và cảm ơn gửi đến đồng nghiệp vì những đóng góp, nỗ lực hoặc hành động tích cực của họ trong công việc. Đây là cách để mỗi người Sun* thể hiện sự trân trọng lẫn nhau một cách chân thành và có ý nghĩa.</string>
+    <string name="community_standards_s2_title">Cách đặt danh hiệu</string>
+    <string name="community_standards_s2_body">Danh hiệu nên ngắn gọn, súc tích và phản ánh đúng đóng góp của người nhận. Hãy chọn từ ngữ tích cực, cụ thể và phù hợp với văn hóa Sun*. Ví dụ: "Người truyền cảm hứng", "Ngôi sao teamwork", "Chuyên gia giải quyết vấn đề".</string>
+    <string name="community_standards_s3_title">Hashtag hợp lệ</string>
+    <string name="community_standards_s3_body">Sử dụng hashtag để phân loại Kudos theo chủ đề hoặc giá trị Sun*. Hashtag phải bắt đầu bằng dấu # và không chứa khoảng trắng. Ví dụ: #teamwork, #innovation, #leadership, #customer_focus.</string>
+    <string name="community_standards_s4_title">Nội dung bị cấm</string>
+    <string name="community_standards_s4_body">Không sử dụng ngôn ngữ xúc phạm, phân biệt đối xử hoặc mang tính chỉ trích cá nhân. Không đăng thông tin cá nhân nhạy cảm. Không gửi Kudos mang mục đích thương mại hoặc quảng cáo. Nội dung vi phạm sẽ bị gỡ bỏ và tài khoản có thể bị hạn chế.</string>
+    <string name="community_standards_s5_title">Ghi nhận ẩn danh</string>
+    <string name="community_standards_s5_body">Bạn có thể chọn gửi Kudos ẩn danh nếu muốn. Khi bật tính năng này, tên của bạn sẽ không hiển thị với người nhận, tuy nhiên Ban Tổ Chức vẫn có thể xem thông tin người gửi để đảm bảo tuân thủ tiêu chuẩn cộng đồng.</string>
+</resources>
